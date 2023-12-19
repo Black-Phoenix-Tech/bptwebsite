@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <>
             <Hero />
-            <Platform />
+            {/* <Platform /> */}
             <ValueProps className="section-pb" />
             <Offer className="section-border-top" />
         </>

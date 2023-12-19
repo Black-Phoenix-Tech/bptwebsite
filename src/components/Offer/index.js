@@ -13,7 +13,7 @@ const Offer = ({ className }) => {
                     Take control of your health today! Download Falcon now to start tracking your wellness, connecting
                     with care teams, and accessing valuable health resources. Your personalized health journey awaits
                 </div>
-                <Link className={cn("button", styles.button)} href="/download">
+                <Link className={cn("button", styles.button)} href="/">
                     Get Started with Falcon
                 </Link>
             </div>

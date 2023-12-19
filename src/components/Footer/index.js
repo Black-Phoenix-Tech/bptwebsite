@@ -9,25 +9,25 @@ import Icon from "../Icon";
 import Image from "../Image";
 
 const menu = [
+    // {
+    //     title: "Lifestyle",
+    //     url: "/lifestyle",
+    // },
     {
-        title: "Lifestyle",
-        url: "/lifestyle",
+        title: "Home",
+        url: "/home",
     },
-    {
-        title: "Pricing",
-        url: "/pricing",
-    },
-    {
-        title: "Class",
-        url: "/class01",
-    },
+    // {
+    //     title: "Class",
+    //     url: "/class01",
+    // },
     {
         title: "Features",
         url: "/features",
     },
     {
-        title: "Download",
-        url: "/download",
+        title: "Contact",
+        url: "/contact",
     },
 ];
 

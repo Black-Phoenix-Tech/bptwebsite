@@ -13,17 +13,17 @@ const navLinks = [
         title: "Home",
         url: "/home",
     },
-    {
-        title: "Download",
-        url: "/download",
-    },
+    // {
+    //     title: "Download",
+    //     url: "/download",
+    // },
     {
         title: "Features",
         url: "/features",
     },
     {
-        title: "Pricing",
-        url: "/pricing",
+        title: "Contact",
+        url: "/contact",
     },
 
     // {
@@ -111,27 +111,27 @@ const navLinks = [
     //         ],
     //     },
     // },
-    {
-        title: "Lifestyle",
-        url: "/lifestyle",
-    },
+    // {
+    //     title: "Lifestyle",
+    //     url: "/lifestyle",
+    // },
 ];
 
 const socials = [
+    // {
+    //     title: "facebook",
+    //     size: "16",
+    //     url: "https://www.facebook.com/ui8.net/",
+    // },
+    // {
+    //     title: "twitter",
+    //     size: "18",
+    //     url: "https://twitter.com/ui8",
+    // },
     {
-        title: "facebook",
+        title: "linkedin",
         size: "16",
-        url: "https://www.facebook.com/ui8.net/",
-    },
-    {
-        title: "twitter",
-        size: "18",
-        url: "https://twitter.com/ui8",
-    },
-    {
-        title: "instagram",
-        size: "16",
-        url: "https://www.instagram.com/ui8net/",
+        url: "https://www.linkedin.com/company/rns-assistant/",
     },
 ];
 
