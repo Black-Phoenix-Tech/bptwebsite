@@ -1,0 +1,171 @@
+@import ../../../styles/helpers
+
+.hero
+    position: relative
+    display: flex
+    align-items: center
+    min-height: 730px
+    padding: 34px 0 130px
+    +x
+        min-height: 730px
+    +d
+        min-height: 624px
+    +m
+        min-height: auto
+        padding: 64px 0 152px
+
+.wrap
+    position: relative
+    z-index: 3
+    max-width: 450px
+    +t
+        max-width: 340px
+    +m
+        max-width: 100%
+        margin-bottom: 80px
+
+.title
+    margin-bottom: 20px
+
+.text
+    margin-bottom: 40px
+    color: $neutrals4
+
+.btns
+    display: block
+    +m
+        display: block
+
+.button
+    +m
+        width: 100%
+    &:not(:last-child)
+        margin-right: 16px
+        +m
+            margin: 0 0 16px
+    
+.scroll
+    position: absolute
+    bottom: 96px
+    +d
+        bottom: 48px
+    +m
+        bottom: 64px
+
+.gallery
+    position: absolute
+    top: 50%
+    right: calc(50% - 700px)
+    width: 750px
+    transform: translateY(-58%)
+    pointer-events: none
+    +x
+        right: calc(50% - 600px)
+        width: 750px
+    +d
+        right: calc(50% - 600px)
+        width: 750px
+    +t
+        right: calc(50% - 575px)
+    +m
+        position: relative
+        top: auto
+        right: auto
+        left: -122px
+        margin: 0 auto
+        transform: translate(0,0)
+        pointer-events: all
+    +a
+        position: relative
+        top: auto
+        right: auto
+        left: -174px
+        margin: 0 auto
+        transform: translate(0,0)
+        pointer-events: all
+    +j
+        position: relative
+        top: auto
+        right: auto
+        left: -204px
+        margin: 0 auto
+        transform: translate(0,0)
+        pointer-events: all
+    +s
+        position: relative
+        top: auto
+        right: auto
+        left: -214px
+        margin: 0 auto
+        transform: translate(0,0)
+        pointer-events: all
+
+.preview
+    &:first-child
+        position: relative
+        z-index: 2
+    &:nth-child(2)
+        top: 36%
+        right: -18%
+        z-index: 3
+        width: 45%
+    &:nth-child(3)
+        top: -12%
+        right: -7%
+        z-index: 1
+        width: 45%
+    &:nth-child(4)
+        left: 11%
+        bottom: 13%
+        z-index: 3
+        width: 18%
+    &:not(:first-child)
+        position: absolute
+    img
+        width: 120%
+
+
+.category
+    margin-bottom: 30px
+    color: #541d8a
+
+.info
+    +caption-1
+    p
+        &:not(:last-child)
+            margin-bottom: 8px
+    &:not(:last-child)
+        margin-bottom: 24px
+
+.col
+    flex: 0 0 100%
+    flex-direction: column
+    padding: 0px 46px 64px
+    +x
+        padding: 80px 64px 64px
+    +d
+        flex: 0 0 34%
+    +t
+        padding: 64px 32px 48px
+    +m
+        padding: 32px 0
+        border-bottom: 1px solid $neutrals6
+        +dark
+            border-color: $neutrals3
+    &:first-child
+        display: flex
+        flex: 0 0 100%
+        padding-left: 0
+        +d
+            flex: 0 0 32%
+        +m
+            display: block
+    &:nth-child(3)
+        padding-right: 0
+    &:nth-child(2),
+    &:nth-child(3)
+        border-left: 1px solid $neutrals6
+        +m
+            border-left: none
+        +dark
+            border-color: $neutrals3
