@@ -6,21 +6,8 @@ import styles from "./Hero.module.sass";
 import ScrollButton from "../../../components/ScrollButton";
 import Image from "next/image";
 import Subscription from "src/components/Subscription";
-import submitForm from "../../../../firebase/submitForm";
 
 const Hero = ({ scrollToRef }) => {
-    const handleSubmit = async (z) => {
-        // e.preventDefault();
-        try {
-            submitForm({ name: "s", email: "s", message: "s" });
-        } catch (error) {
-            // Handle error
-            console.error("Error sending email:", error);
-        }
-    };
-    useEffect(() => {
-        handleSubmit();
-    }, []);
     return (
         <div className={styles.hero}>
             <div className={cn("container", styles.container)}>
