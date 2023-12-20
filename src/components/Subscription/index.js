@@ -10,7 +10,8 @@ const Subscription = ({ className, placeholder }) => {
     const handleSubmit = async (z) => {
         // e.preventDefault();
         try {
-            submitForm({ name: "s", email: "a.m.h.optimist@gmail.com", message: "s" });
+            submitForm({ name: "", email: email, message: "" });
+            setEmail("Thank you!");
         } catch (error) {
             // Handle error
             console.error("Error sending email:", error);

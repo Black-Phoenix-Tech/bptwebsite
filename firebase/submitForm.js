@@ -6,17 +6,19 @@ import { auth, db } from "./firebase";
 const welcomeEmail = `
 Hello,
 
-Welcome to the Black Phoenix journey!
+Welcome to the Black Phoenix journey!🌟
 
-We're thrilled to have you on board, and we appreciate your commitment to your health and well-being. The Black Phoenix app is here to support you every step of the way on your health tracking adventure.
+It's all about you!
 
-Our mission is to empower you with accurate, comprehensive health data, specifically tailored for neural patients. By using the app, you gain the ability to input and register your health information, providing a clear overview of your symptoms and overall health. This wealth of data not only aids you in understanding your health better but also facilitates more effective and personalized discussions with your healthcare providers.
+Our mission is to empower you with accurate, comprehensive health data, specifically tailored for neural patients. By using the Falcon app, you gain the ability to input and register your health information, providing a clear overview of your symptoms and overall health. This wealth of data not only aids you in understanding your health better but also facilitates more effective and personalized discussions with your healthcare providers.
 
-One of the app's standout features is its assistance in adhering to prescribed treatment protocols. We understand the importance of consistency in your health journey, and our tool is designed to help you stay on track. With the ability to observe patterns, identify improvements, or setbacks, and share this valuable information with your healthcare providers or caregivers, you're taking control of your health like never before.
+One of the Falcon app's standout features is its assistance in adhering to prescribed treatment protocols. We understand the importance of consistency in your health journey, and our tool is designed to help you stay on track. With the ability to observe patterns, identify improvements, or setbacks, and share this valuable information with your healthcare providers or caregivers, you're taking control of your health like never before.
 
-Additionally, the app allows you to export your data, graphs, and visualizations. This feature enables you to have a tangible record of your progress, which you can easily share with your healthcare team for even more informed discussions.
+Additionally, the Falcon app allows you to export your data, graphs, and visualizations. This feature enables you to have a tangible record of your progress, which you can easily share with your healthcare team for even more informed discussions.
 
 Thank you for choosing Black Phoenix. Your commitment to your health is inspiring, and we're here to support you on your journey to a healthier, happier life.
+
+Falcon app is coming soon...
 
 Love,
 
@@ -46,8 +48,6 @@ const submitForm = async (formData) => {
             subject: "Welcome to Black Phoenix!",
             message: welcomeEmail,
         };
-
-        Amirhossein;
 
         try {
             const response = await fetch("/api/sendEmail", {
