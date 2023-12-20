@@ -62,7 +62,7 @@ createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
         // User signed up successfully
         const user = userCredential.user;
-        console.log("User signed up:", user);
+        // console.log("User signed up:", user);
     })
     .catch((error) => {
         // Handle errors
@@ -83,7 +83,7 @@ signInAnonymously(auth)
     });
 onAuthStateChanged(auth, (user) => {
     if (user) {
-        console.log("User is authenticated:", user);
+        // console.log("User is authenticated:", user);
         // Perform actions that require authentication here
         // ...
     } else {

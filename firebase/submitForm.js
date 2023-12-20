@@ -32,11 +32,11 @@ const submitForm = async (formData) => {
         }
         // Store form data in Firestore
         const docRef = await addDoc(collection(db, "formData"), formData);
-        console.log(docRef);
+        // console.log(docRef);
         // Send password reset email to user
         const { email, name } = formData;
         const message = `Hello ${name}, your form has been submitted successfully!`;
-        console.log(message);
+        // console.log(message);
         // await sendPasswordResetEmail(auth, email, {
         //     url: "https://blackphoenix.ca", // Replace with your app URL
         //     handleCodeInApp: true,
@@ -97,8 +97,8 @@ const submitForm = async (formData) => {
         //         // Handle error
         //         console.error("Error sending email:", error);
         //     });
-        console.log("Form data stored in Firestore:", docRef.id);
-        console.log("Email sent to user:", email);
+        // console.log("Form data stored in Firestore:", docRef.id);
+        // console.log("Email sent to user:", email);
     } catch (error) {
         console.error("Error submitting form:", error);
     }
