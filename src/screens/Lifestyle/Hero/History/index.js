@@ -7,8 +7,9 @@ import styles from "./History.module.sass";
 const items = [
     {
         url: "/article",
-        title: "Stories From Our Community: Kohaku & Moyo Shiro",
-        content: "Track your workouts, get better results, and be the best version of you. Less thinking",
+        title: "Hypertension Control: Tech-Enhanced Health Management",
+        content:
+            "Addressing the Global Epidemic: Hypertension's Impact on Mortality and Quality of Life, and the Role of Innovative Health Apps in Management and Prevention",
         image: "url('/images/content/history-pic.png')",
         status: "pink",
         statusContent: "new",
@@ -29,14 +30,14 @@ const items = [
         status: "pink",
         statusContent: "new",
     },
-    {
-        url: "/article",
-        title: "Stories From Our Community: Kohaku & Moyo Shiro",
-        content: "Track your workouts, get better results, and be the best version of you. Less thinking",
-        image: "url('/images/content/history-pic.png')",
-        status: "green",
-        statusContent: "yoga",
-    },
+    // {
+    //     url: "/article",
+    //     title: "Stories From Our Community: Kohaku & Moyo Shiro",
+    //     content: "Track your workouts, get better results, and be the best version of you. Less thinking",
+    //     image: "url('/images/content/history-pic.png')",
+    //     status: "green",
+    //     statusContent: "yoga",
+    // },
 ];
 
 const History = () => {

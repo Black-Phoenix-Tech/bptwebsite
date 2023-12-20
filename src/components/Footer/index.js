@@ -9,10 +9,10 @@ import Icon from "../Icon";
 import Image from "../Image";
 
 const menu = [
-    // {
-    //     title: "Lifestyle",
-    //     url: "/lifestyle",
-    // },
+    {
+        title: "Lifestyle",
+        url: "/lifestyle",
+    },
     {
         title: "Home",
         url: "/home",
@@ -33,30 +33,35 @@ const menu = [
 
 const socials = [
     {
-        title: "facebook",
+        title: "linkedin",
         size: "16",
-        url: "https://www.facebook.com/ui8.net/",
+        url: "https://www.linkedin.com/company/rns-assistant/",
     },
-    {
-        title: "twitter",
-        size: "18",
-        url: "https://twitter.com/ui8",
-    },
-    {
-        title: "instagram",
-        size: "16",
-        url: "https://www.instagram.com/ui8net/",
-    },
-    {
-        title: "dribbble",
-        size: "16",
-        url: "https://dribbble.com/ui8",
-    },
-    {
-        title: "behance",
-        size: "20",
-        url: "https://www.behance.net/ui8",
-    },
+    // {
+    //     title: "facebook",
+    //     size: "16",
+    //     url: "https://www.facebook.com/ui8.net/",
+    // },
+    // {
+    //     title: "twitter",
+    //     size: "18",
+    //     url: "https://twitter.com/ui8",
+    // },
+    // {
+    //     title: "instagram",
+    //     size: "16",
+    //     url: "https://www.instagram.com/ui8net/",
+    // },
+    // {
+    //     title: "dribbble",
+    //     size: "16",
+    //     url: "https://dribbble.com/ui8",
+    // },
+    // {
+    //     title: "behance",
+    //     size: "20",
+    //     url: "https://www.behance.net/ui8",
+    // },
 ];
 
 const Footer = () => {

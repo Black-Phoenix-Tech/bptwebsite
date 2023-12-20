@@ -1,15 +1,22 @@
 {
-    "name": "",
-    "short_name": "",
+    "start_url": "https://blackphoenix.ca",
+    "name": "Black Phoenix",
+    "short_name": "Black Phoenix",
+    "description": "Empower your health journey with Falcon app. Input, track, and share health data effortlessly. Get personalized care and treatment insights in a snap with Black Phoenix apps.",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png",
-            "sizes": "192x192",
+            "src": "/logo-light-107x148.png",
+            "sizes": "107x148",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-512x512.png",
-            "sizes": "512x512",
+            "src": "/logo-light-192x266.png",
+            "sizes": "192x266",
+            "type": "image/png"
+        },
+        {
+            "src": "/logo-light-370x512.png",
+            "sizes": "370x512",
             "type": "image/png"
         }
     ],

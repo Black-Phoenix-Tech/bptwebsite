@@ -6,7 +6,7 @@ import ClientOnly from "src/components/ClientOnly";
 import { useRouter } from "next/router";
 import Page from "../src/components/Page";
 import "src/styles/app.sass";
-import { analytics } from "../firebase";
+import { analytics } from "../firebase/firebase";
 
 const Script = dynamic(() => import("next/script"), {
     suspense: true,
@@ -18,18 +18,6 @@ const AppWithTheme = ({ Component, pageProps }: AppProps) => {
             (analytics as any)?.logEvent("visit website", { param: "all" });
         } catch (error) {}
     }, []);
-    // useEffect(() => {
-    //     if ("serviceWorker" in navigator) {
-    //         navigator.serviceWorker
-    //             .register("/service-worker.js")
-    //             .then((registration) => {
-    //                 console.log("Service Worker registered with scope:", registration.scope);
-    //             })
-    //             .catch((error) => {
-    //                 console.error("Service Worker registration failed:", error);
-    //             });
-    //     }
-    // }, []);
 
     return (
         <Suspense>
@@ -69,10 +57,12 @@ const MyApp = ({ Component, pageProps }: AppInitialProps) => {
                 <meta content="%PUBLIC_URL%/favicon-32x32.png" property="og:image" />
                 <meta property="og:url" content="https://blackphoenix.ca" />
                 <meta property="og:site_name" content="Black Phoenix: It's all about you" />
-                <meta content="Black Phoenix: Website UI Kit" property="twitter:title" />
-                {/* falcon app desc */}
-                <meta content="Premium Web UI Kit for Fitness Experience" property="twitter:description" />
-                <meta content="%PUBLIC_URL%/twitter-card.png" property="twitter:image" />
+                <meta content="Black Phoenix" property="twitter:title" />
+                <meta
+                    content="Tracker Health app for patients and caregivers, connect with providers, manage care plans. "
+                    property="twitter:description"
+                />
+                {/* <meta content="%PUBLIC_URL%/twitter-card.png" property="twitter:image" /> */}
                 <meta property="og:type" content="website" />
                 <meta content="summary" name="twitter:card" />
                 <meta name="twitter:site" content="@blackphoenix" />
@@ -116,7 +106,7 @@ const MyApp = ({ Component, pageProps }: AppInitialProps) => {
           gtag('config', '${process.env.GOOGLE_ANALYTICS_API_ID}');
         `}
             </Script>
-            <Script>
+            <Script async={true}>
                 {`(function () {
       // Change these if you use something different in your hook.
       var storageKey = 'darkMode';
@@ -161,12 +151,5 @@ const MyApp = ({ Component, pageProps }: AppInitialProps) => {
         </>
     );
 };
-
-/*
-  this function can report web vitals like FCP and LCP
-**/
-// export function reportWebVitals(metric: NextWebVitalsMetric) {
-//   console.log(metric);
-// }
 
 export default MyApp;

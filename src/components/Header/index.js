@@ -111,10 +111,10 @@ const navLinks = [
     //         ],
     //     },
     // },
-    // {
-    //     title: "Lifestyle",
-    //     url: "/lifestyle",
-    // },
+    {
+        title: "Lifestyle",
+        url: "/lifestyle",
+    },
 ];
 
 const socials = [
@@ -212,12 +212,12 @@ const Headers = () => {
                             ))}
                         </div>
                         <Link className={cn("button-stroke button-small", styles.button)} href="/">
-                            Get free trial
+                            Coming soon...
                         </Link>
                     </div>
                 </div>
                 <Link className={cn("button-stroke button-small", styles.button)} href="/">
-                    Get free trial
+                    Coming soon...
                 </Link>
                 <button
                     className={cn(styles.burger, {
