@@ -12,23 +12,13 @@ const Intro = ({ scrollToRef }) => {
                 <div className={styles.gallery}>
                     <ScrollParallax className={styles.preview} animateIn="fadeInUp">
                         <Image
-                            // srcSet="/images/content/app-tracker.png 2x"
+                            srcSet="/images/content/app-tracker.png 2x"
                             src="/images/content/app-tracker.png"
                             alt="Bag"
                             width={570}
                             height={570}
                         />
                     </ScrollParallax>
-                    {/* <ScrollParallax className={styles.preview} animateIn="fadeInUp">
-                        <img srcSet="/images/content/gloves@2x.png 2x" src="/images/content/gloves.png" alt="Gloves" />
-                    </ScrollParallax> */}
-                    {/* <ScrollParallax className={styles.preview} animateIn="fadeInUp">
-                        <img
-                            srcSet="/images/content/bottle-1@2x.png 2x"
-                            src="/images/content/bottle-1.png"
-                            alt="Bottle"
-                        />
-                    </ScrollParallax> */}
                 </div>
                 <div className={styles.wrap}>
                     <h2 className={cn("h2", styles.title)}>

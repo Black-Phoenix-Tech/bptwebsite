@@ -68,37 +68,6 @@ const submitForm = async (formData) => {
         } catch (error) {
             console.error("Error sending email:", error);
         }
-        // sendEmail({ subject: "s", email: "a.m.h.optimist@gmail.com", message: "s" });
-        // const response = await fetch("/api/sendEmail", {
-        //     method: "POST",
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //     },
-        //     body: JSON.stringify({
-        //         email: email,
-        //         subject: "Test email",
-        //         message: "This is a test email from Next.js!",
-        //     }),
-        // });
-
-        // const result = await response.json();
-
-        // if (result.success) {
-        //     console.log("Email sent successfully");
-        // } else {
-        //     console.error("Error sending email:", result.error);
-        // }
-        // sendEmail(formData)
-        //     .then((result) => {
-        //         // Handle success
-        //         console.log("Email sent successfully:", result.data);
-        //     })
-        //     .catch((error) => {
-        //         // Handle error
-        //         console.error("Error sending email:", error);
-        //     });
-        // console.log("Form data stored in Firestore:", docRef.id);
-        // console.log("Email sent to user:", email);
     } catch (error) {
         console.error("Error submitting form:", error);
     }

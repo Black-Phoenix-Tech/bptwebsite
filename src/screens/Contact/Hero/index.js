@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import cn from "classnames";
 import styles from "./Hero.module.sass";
-import Subscription from "../../../components/Subscription";
 import Image from "../../../components/Image";
 import Icon from "src/components/Icon";
-import Link from "next/link";
 import submitForm from "../../../../firebase/submitForm";
 
 const Hero = () => {
