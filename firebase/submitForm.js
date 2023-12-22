@@ -1,7 +1,6 @@
 // submitForm.js
 import { addDoc, collection } from "firebase/firestore";
 import { auth, db } from "./firebase";
-// import emailjs from "emailjs-com";
 
 const welcomeEmail = `
 Hello,
@@ -32,17 +31,11 @@ const submitForm = async (formData) => {
             console.error("User is not authenticated");
             return;
         }
-        // Store form data in Firestore
         const docRef = await addDoc(collection(db, "formData"), formData);
-        // console.log(docRef);
-        // Send password reset email to user
+
         const { email, name } = formData;
         const message = `Hello ${name}, your form has been submitted successfully!`;
-        // console.log(message);
-        // await sendPasswordResetEmail(auth, email, {
-        //     url: "https://blackphoenix.ca", // Replace with your app URL
-        //     handleCodeInApp: true,
-        // });
+
         const emailData = {
             to: email,
             subject: "Welcome to Black Phoenix!",
