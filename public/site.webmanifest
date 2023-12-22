@@ -5,18 +5,23 @@
     "description": "Empower your health journey with Falcon app. Input, track, and share health data effortlessly. Get personalized care and treatment insights in a snap with Black Phoenix apps.",
     "icons": [
         {
-            "src": "/logo-light-107x148.png",
-            "sizes": "107x148",
+            "src": "/logo-light-192x192.png",
+            "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/logo-light-192x266.png",
-            "sizes": "192x266",
+            "src": "/logo-light-256x256.png",
+            "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "/logo-light-370x512.png",
-            "sizes": "370x512",
+            "src": "/logo-light-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/logo-light-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],

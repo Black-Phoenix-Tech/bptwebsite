@@ -1,65 +1,125 @@
 @import ../../styles/helpers
 
-.head
-    margin-bottom: 80px
-    text-align: center
+.hero
+    position: relative
+    display: flex
+    align-items: center
+    min-height: 630px
+    padding: 34px 0 130px
+    +x
+        min-height: 720px
+    +d
+        min-height: 674px
+    +m
+        min-height: auto
+        padding: 100px 0 122px
+
+.wrap
+    position: relative
+    z-index: 3
+    max-width: 450px
+    +t
+        max-width: 340px
+    +m
+        max-width: 100%
+        margin-bottom: 80px
 
 .title
     margin-bottom: 20px
 
-.info
-    max-width: 625px
-    margin: 0 auto
-    color: $neutrals3
-    +d
-        max-width: 100%
-        color: $neutrals4
-    +dark
-        color: $neutrals5
+.text
+    margin-bottom: 40px
+    color: $neutrals4
 
-.list
+.btns
     display: flex
-    margin: 0 -12px
-    +t
-        margin: 0 -40px
-        overflow: auto
-        overflow-x: auto 
-        -ms-overflow-style: none
-        scrollbar-width: none
-        -webkit-overflow-scrolling: touch
-        &::-webkit-scrollbar
-            display: none 
-        &:before,
-        &:after
-            content: ""
-            flex-shrink: 0
-            width: 40px
-            height: 1px
-
-.item
-    flex: 0 0 calc(33.333% - 24px)
-    width: calc(33.333% - 24px)
-    margin: 0 12px
-    padding: 0 32px
-    text-align: center
-    +t
-        flex: 0 0 280px
-        margin: 0
-        padding: 0
     +m
-        flex: 0 0 260px
+        display: block
+
+.button
+    +m
+        width: 100%
     &:not(:last-child)
-        +t
-            margin-right: 32px
+        margin-right: 16px
         +m
-            margin-right: 8px
+            margin: 0 0 16px
+    
+.scroll
+    position: absolute
+    bottom: 96px
+    +d
+        bottom: 48px
+    +m
+        bottom: 64px
+
+.gallery
+    position: absolute
+    top: 50%
+    right: calc(50% - 495px)
+    width: 512px
+    transform: translateY(-58%)
+    pointer-events: none
+    +x
+        right: calc(50% - 485px)
+        width: 450px
+    +d
+        right: calc(50% - 485px)
+        width: 450px
+    +t
+        right: calc(50% - 410px)
+    +m
+        position: relative
+        top: auto
+        right: auto
+        left: -36px
+        margin: 0 auto
+        transform: translate(0,0)
+        pointer-events: all
+    +j
+        position: relative
+        top: auto
+        right: auto
+        left: -50px
+        margin: 0 auto
+        transform: translate(0,0)
+        pointer-events: all
+    +a
+        position: relative
+        top: auto
+        right: auto
+        left: -12px
+        margin: 0 auto
+        transform: translate(0,0)
+        pointer-events: all
+    +s
+        position: relative
+        top: auto
+        right: auto
+        left: -60px
+        margin: 0 auto
+        transform: translate(0,0)
+        pointer-events: all
 
 .preview
-    height: 85px
-    margin-bottom: 36px
+    &:first-child
+        position: relative
+        z-index: 2
+    &:nth-child(2)
+        top: 36%
+        right: -18%
+        z-index: 3
+        width: 45%
+    &:nth-child(3)
+        top: -12%
+        right: -7%
+        z-index: 1
+        width: 45%
+    &:nth-child(4)
+        left: 11%
+        bottom: 13%
+        z-index: 3
+        width: 18%
+    &:not(:first-child)
+        position: absolute
     img
-        max-height: 100%
-
-.subtitle
-    +body-2
-    
+        width: 100%

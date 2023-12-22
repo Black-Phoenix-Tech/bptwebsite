@@ -30,12 +30,6 @@ const Workouts = () => {
                             alt="Phones"
                         />
                     </div>
-                    {/* <ScrollParallax className={styles.preview} animateIn="fadeInUp">
-                        <img srcSet="/images/content/apple@2x.png 2x" src="/images/content/apple.png" alt="Apple" />
-                    </ScrollParallax> */}
-                    <ScrollParallax className={styles.preview} animateIn="fadeInUp">
-                        <img srcSet="/images/content/apple@2x.png 2x" src="/images/content/apple.png" alt="Apple" />
-                    </ScrollParallax>
                 </div>
                 <div className={styles.wrap}>
                     <h2 className={cn("h2", styles.title)}>All-in-One Health Hub</h2>

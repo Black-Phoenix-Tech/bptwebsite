@@ -11,16 +11,17 @@ const Hero = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [loading, setLoading] = useState(false);
 
-    const handleSubmit = async (z) => {
-        // e.preventDefault();
+    const handleSubmit = async () => {
         try {
-            submitForm({ name: name, email: email, message: message });
+            setLoading(true);
+            await submitForm({ name: name, email: email, message: message });
+            setLoading(false);
             setName("");
             setEmail("");
             setMessage("Thank you!");
         } catch (error) {
-            // Handle error
             console.error("Error sending email:", error);
         }
     };
@@ -30,12 +31,6 @@ const Hero = () => {
             <div className={cn("container", styles.container)}>
                 <div className={styles.col}>
                     <div className={styles.wrap}>
-                        {/* <div className={cn("stage", styles.stage)}>time to get fitness pro</div> */}
-                        {/* <h1 className={cn("h1", styles.title)}>Fitness Pro for any device.</h1> */}
-                        {/* <div className={styles.text}>
-                            Track your workouts, get better results, and be the best version of you. Less thinking, more
-                            lifting.
-                        </div> */}
                         <div className={styles.contact}>
                             <h1 className={cn("h1", styles.title)}>Contact Us</h1>
                             <div className={styles.text}>
@@ -71,20 +66,48 @@ const Hero = () => {
                                     placeholder={"Your Message"}
                                     required
                                 />
-                                {/* <button className={styles.btn}>
-                                    <Icon name="arrow-right" size="14" />
-                                </button> */}
                                 <div className={styles.btns}>
                                     <button className={cn("button", styles.button)} onClick={() => handleSubmit()}>
-                                        Submit <Icon name="arrow-right" size="14" />
+                                        {loading ? (
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 140 140"
+                                                preserveAspectRatio="xMidYMid"
+                                                style={{ background: "none" }}
+                                            >
+                                                <circle
+                                                    cx="70"
+                                                    cy="70"
+                                                    r="45"
+                                                    fill="none"
+                                                    strokeWidth="5"
+                                                    stroke="#0073e6"
+                                                >
+                                                    <animate
+                                                        attributeName="stroke-dasharray"
+                                                        dur="2s"
+                                                        repeatCount="indefinite"
+                                                        values="0 200;90 150;150 90;200 0"
+                                                        keyTimes="0;0.5;0.75;1"
+                                                    />
+                                                    <animate
+                                                        attributeName="stroke-dashoffset"
+                                                        dur="2s"
+                                                        repeatCount="indefinite"
+                                                        values="0 -200;-90 -150;-150 -90;-200 0"
+                                                        keyTimes="0;0.5;0.75;1"
+                                                    />
+                                                </circle>
+                                            </svg>
+                                        ) : (
+                                            <>
+                                                Submit <Icon name="arrow-right" size="14" />
+                                            </>
+                                        )}
                                     </button>
-                                    {/* <Link className={cn("button-stroke", styles.button)} href="/class02-details">
-                            Book a Class
-                        </Link> */}
                                 </div>
                             </div>
                         </div>
-                        {/* <Subscription className={styles.subscription} placeholder="Enter your email" /> */}
                     </div>
                 </div>
                 <div className={styles.colImage}>

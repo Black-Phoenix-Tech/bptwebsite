@@ -3,6 +3,7 @@ import cn from "classnames";
 import Link from "next/link";
 import styles from "./Intro.module.sass";
 import ScrollParallax from "../ScrollParallax";
+import Image from "next/image";
 
 const Intro = ({ scrollToRef }) => {
     return (
@@ -10,10 +11,12 @@ const Intro = ({ scrollToRef }) => {
             <div className={cn("container", styles.container)}>
                 <div className={styles.gallery}>
                     <ScrollParallax className={styles.preview} animateIn="fadeInUp">
-                        <img
-                            srcSet="/images/content/app-tracker.png 2x"
+                        <Image
+                            // srcSet="/images/content/app-tracker.png 2x"
                             src="/images/content/app-tracker.png"
                             alt="Bag"
+                            width={570}
+                            height={570}
                         />
                     </ScrollParallax>
                     {/* <ScrollParallax className={styles.preview} animateIn="fadeInUp">
