@@ -7,7 +7,7 @@ const Download = () => {
     return (
         <>
             <Post />
-            <Review className="section-bg" />
+            {/* <Review className="section-bg" /> */}
             <Story />
         </>
     );

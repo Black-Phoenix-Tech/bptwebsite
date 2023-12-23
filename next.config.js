@@ -40,7 +40,7 @@ const nextConfig = {
     },
     experimental: {
         // Defaults to 50MB
-        isrMemoryCacheSize: 0, // cache size in bytes
+        // isrMemoryCacheSize: 0, // cache size in bytes
     },
     /** Module federation setup for micro frontend
      * webpack: (
@@ -69,11 +69,6 @@ const nextConfig = {
     env: {
         GOOGLE_ANALYTICS_API_ID: process.env.GOOGLE_ANALYTICS_API_ID,
         SENTRY_DSN: process.env.SENTRY_DSN,
-        CORE_URL: process.env.CORE_URL,
-    },
-    sentry: {
-        disableServerWebpackPlugin: true,
-        disableClientWebpackPlugin: true,
     },
     async headers() {
         return [
@@ -85,15 +80,11 @@ const nextConfig = {
     },
 };
 
-const sentryWebpackPluginOptions = {
-    silent: true,
-};
-
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
     enabled: process.env.ANALYZE === "true",
 });
 
-module.exports = withBundleAnalyzer(nextConfig, sentryWebpackPluginOptions);
+module.exports = withBundleAnalyzer(nextConfig);
 
 /*
 module.exports = withPWA({

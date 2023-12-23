@@ -24,7 +24,9 @@
 
 .col
     &:first-child
-        flex: 0 0 256px
+        display: flex
+        align-self: baseline
+        flex: 0 0 393px
         margin-right: auto
         +d
             margin-right: 80px
@@ -32,7 +34,7 @@
             max-width: 400px
             margin: 0 auto
     &:nth-child(2)
-        flex: 0 0 640px
+        flex: 0 0 650px
         +d
             flex: 1 1 auto
         +t
@@ -67,3 +69,6 @@
         &:not(:last-child)
             margin-bottom: 24px
 
+
+.anchor
+    text-decoration: underline

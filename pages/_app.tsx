@@ -6,7 +6,7 @@ import ClientOnly from "src/components/ClientOnly";
 import { useRouter } from "next/router";
 import Page from "../src/components/Page";
 import "src/styles/app.sass";
-import { analytics } from "../firebase/firebase";
+// import { analytics } from "../firebase/firebase";
 
 const Script = dynamic(() => import("next/script"), {
     suspense: true,
@@ -15,7 +15,7 @@ const Script = dynamic(() => import("next/script"), {
 const AppWithTheme = ({ Component, pageProps }: AppProps) => {
     useEffect(() => {
         try {
-            (analytics as any)?.logEvent("visit website", { param: "all" });
+            // (analytics as any)?.logEvent("visit website", { param: "all" });
         } catch (error) {}
     }, []);
 
@@ -43,18 +43,18 @@ const MyApp = ({ Component, pageProps }: AppInitialProps) => {
                 <meta property="og:url" content="https://blackphoenix.ca" />
                 <meta
                     property="og:description"
-                    content="Black Phoenix Tech, Black Phoenix Falcon app, Black Phoenix, blackphoenix"
+                    content="Black Phoenix Tech, Black Phoenix Falcon app, Black Phoenix, blackphoenix, falcon app"
                 />
                 <meta
-                    content="Black Phoenix Tech, Black Phoenix Falcon app, Black Phoenix, blackphoenix"
+                    content="Black Phoenix Tech, Black Phoenix Falcon app, Black Phoenix, blackphoenix, falcon app"
                     name="description"
                 />
                 <meta content="Black Phoenix: It's all about you" property="og:title" />
                 <meta
-                    content="Black Phoenix Tech, Black Phoenix Falcon app, Black Phoenix, blackphoenix"
+                    content="Black Phoenix Tech, Black Phoenix Falcon app, Black Phoenix, blackphoenix, falcon app"
                     property="og:description"
                 />
-                <meta content="%PUBLIC_URL%/favicon-32x32.png" property="og:image" />
+                <meta content="/favicon-32x32.png" property="og:image" />
                 <meta property="og:url" content="https://blackphoenix.ca" />
                 <meta property="og:site_name" content="Black Phoenix: It's all about you" />
                 <meta content="Black Phoenix" property="twitter:title" />
@@ -62,30 +62,20 @@ const MyApp = ({ Component, pageProps }: AppInitialProps) => {
                     content="Tracker Health app for patients and caregivers, connect with providers, manage care plans. "
                     property="twitter:description"
                 />
-                {/* <meta content="%PUBLIC_URL%/twitter-card.png" property="twitter:image" /> */}
+                {/* <meta content="/twitter-card.png" property="twitter:image" /> */}
                 <meta property="og:type" content="website" />
                 <meta content="summary" name="twitter:card" />
                 <meta name="twitter:site" content="@blackphoenix" />
                 <meta name="twitter:creator" content="@blackphoenix" />
-                <meta property="fb:admins" content="132951670226590" />
-                <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+                {/* <meta property="fb:admins" content="132951670226590" /> */}
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="theme-color" content="#000000" />
-                <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
-                <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
-                <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
-                <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
+                <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+                <link rel="manifest" href="/site.webmanifest" />
                 <meta name="msapplication-TileColor" content="#da532c" />
                 <meta name="theme-color" content="#ffffff" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-                    rel="stylesheet"
-                />
-                <Script
-                    src="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-                    strategy="afterInteractive"
-                />
                 <style>{`
     @font-face {
       font-family: "SFProDisplay-Bold";

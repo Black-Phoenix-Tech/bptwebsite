@@ -10,7 +10,9 @@ const Hero = ({ scrollToRef }) => {
         <div className={styles.hero}>
             <div className={cn("container", styles.container)}>
                 <div className={styles.wrap}>
-                    <div className={cn("stage", styles.stage)}>Falcon Health Tracker</div>
+                    <div className={cn("stage", styles.stage)}>
+                        <span className={styles.strongTitle}>Falcon</span> Health Tracker
+                    </div>
                     <h1 className={cn("h2", styles.title)}>Your Personalized Health Companion</h1>
                     <div className={styles.text}>
                         Revolutionize your health management with Falcon. Track symptoms, medications, and lifestyle

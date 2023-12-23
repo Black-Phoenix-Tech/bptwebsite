@@ -3,7 +3,6 @@ import cn from "classnames";
 import styles from "./Hero.module.sass";
 import Image from "../../../components/Image";
 import Icon from "src/components/Icon";
-import submitForm from "../../../../firebase/submitForm";
 
 const Hero = () => {
     const [name, setName] = useState("");
@@ -14,7 +13,8 @@ const Hero = () => {
     const handleSubmit = async () => {
         try {
             setLoading(true);
-            await submitForm({ name: name, email: email, message: message });
+            const module = await import("../../../../firebase/submitForm");
+            module.submitForm({ name: name, email: email, message: message });
             setLoading(false);
             setName("");
             setEmail("");

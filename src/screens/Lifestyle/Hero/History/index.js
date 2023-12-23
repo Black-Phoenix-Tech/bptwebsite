@@ -6,7 +6,16 @@ import styles from "./History.module.sass";
 
 const items = [
     {
-        url: "/article",
+        url: "/obesity-app",
+        title: "Tackling Obesity in Canadian Families",
+        content:
+            "Explore the complexities of obesity within Canadian families as they confront the challenges and seek solutions for a healthier future",
+        image: "url('/images/content/obesity.jpg')",
+        status: "pink",
+        statusContent: "new",
+    },
+    {
+        url: "/hypertension-app",
         title: "Hypertension Control: Tech-Enhanced Health Management",
         content:
             "Addressing the Global Epidemic: Hypertension's Impact on Mortality and Quality of Life, and the Role of Innovative Health Apps in Management and Prevention",
@@ -15,29 +24,13 @@ const items = [
         statusContent: "new",
     },
     {
-        url: "/article",
-        title: "Stories From Our Community: Kohaku & Moyo Shiro",
-        content: "Track your workouts, get better results, and be the best version of you. Less thinking",
-        image: "url('/images/content/history-pic.png')",
+        url: "/diabetes-app",
+        title: "Diabetes in Canada",
+        content: "Navigating the Landscape: Unveiling the Realities and Solutions of Diabetes in Canada",
+        image: "url('/images/content/diabetes.jpg')",
         status: "green",
-        statusContent: "yoga",
+        statusContent: "diabetes",
     },
-    {
-        url: "/article",
-        title: "Stories From Our Community: Kohaku & Moyo Shiro",
-        content: "Track your workouts, get better results, and be the best version of you. Less thinking",
-        image: "url('/images/content/history-pic.png')",
-        status: "pink",
-        statusContent: "new",
-    },
-    // {
-    //     url: "/article",
-    //     title: "Stories From Our Community: Kohaku & Moyo Shiro",
-    //     content: "Track your workouts, get better results, and be the best version of you. Less thinking",
-    //     image: "url('/images/content/history-pic.png')",
-    //     status: "green",
-    //     statusContent: "yoga",
-    // },
 ];
 
 const History = () => {

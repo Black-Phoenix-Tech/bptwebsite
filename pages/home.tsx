@@ -17,7 +17,7 @@ const Home = () => {
             <Steps scrollToRef={scrollToRef} />
             <Intro scrollToRef={undefined} />
             <Advantages />
-            <Review className="section" />
+            {/* <Review className="section" /> */}
             <Workouts />
             <Offer className="section-border-top" />
         </>

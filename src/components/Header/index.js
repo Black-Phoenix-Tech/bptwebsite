@@ -4,7 +4,6 @@ import cn from "classnames";
 import styles from "./Header.module.sass";
 import DropdownMenu from "./DropdownMenu";
 import Icon from "../Icon";
-// import Image from "next/image";
 import { useRouter } from "next/router";
 import Image from "../Image";
 
@@ -13,10 +12,6 @@ const navLinks = [
         title: "Home",
         url: "/home",
     },
-    // {
-    //     title: "Download",
-    //     url: "/download",
-    // },
     {
         title: "Features",
         url: "/features",
@@ -25,92 +20,6 @@ const navLinks = [
         title: "Contact",
         url: "/contact",
     },
-
-    // {
-    //     title: "Class",
-    //     content: {
-    //         menu: [
-    //             {
-    //                 title: "Program Videos",
-    //                 url: "/class01",
-    //                 image: "/images/menu-video.svg",
-    //             },
-    //             {
-    //                 title: "Premium Class",
-    //                 url: "/class02",
-    //                 image: "/images/menu-class.svg",
-    //             },
-    //         ],
-    //         links: [
-    //             {
-    //                 title: "Sweet and Tone",
-    //                 url: "/class01-details",
-    //                 image: "/images/content/header-pic-1.png",
-    //                 image2x: "/images/content/header-pic-1@2x.png",
-    //                 category: "black",
-    //                 categoryText: "featured class",
-    //                 avatar: "/images/content/avatar-1.png",
-    //                 trainer: "Zack Beier",
-    //                 content:
-    //                     "Sweet and Tone is a seven-day bodyweight training program designed to boost your strength and endurance over the course of a week.",
-    //                 level: "green",
-    //                 levelText: "beginner",
-    //             },
-    //             {
-    //                 title: "Sweet and Tone",
-    //                 url: "/class01-details",
-    //                 image: "/images/content/header-pic-2.png",
-    //                 image2x: "/images/content/header-pic-2@2x.png",
-    //                 category: "green",
-    //                 categoryText: "yoga",
-    //                 avatar: "/images/content/avatar-2.png",
-    //                 trainer: "Zack Beier",
-    //             },
-    //             {
-    //                 title: "Sweet and Tone",
-    //                 url: "/class01-details",
-    //                 image: "/images/content/header-pic-3.png",
-    //                 image2x: "/images/content/header-pic-3@2x.png",
-    //                 category: "purple",
-    //                 categoryText: "mindfulness",
-    //                 avatar: "/images/content/avatar-3.png",
-    //                 trainer: "Zack Beier",
-    //             },
-    //             {
-    //                 title: "Sweet and Tone",
-    //                 url: "/class01-details",
-    //                 image: "/images/content/header-pic-4.png",
-    //                 image2x: "/images/content/header-pic-4@2x.png",
-    //                 category: "red",
-    //                 categoryText: "fitness",
-    //                 avatar: "/images/content/avatar-4.png",
-    //                 trainer: "Zack Beier",
-    //             },
-    //         ],
-    //         trainer: [
-    //             {
-    //                 title: "Boyd Reinger",
-    //                 avatar: "/images/content/avatar-1.png",
-    //                 type: "Personal trainer",
-    //             },
-    //             {
-    //                 title: "Randal Jacobson",
-    //                 avatar: "/images/content/avatar-2.png",
-    //                 type: "Personal trainer",
-    //             },
-    //             {
-    //                 title: "Dwight Schamberger",
-    //                 avatar: "/images/content/avatar-3.png",
-    //                 type: "Personal trainer",
-    //             },
-    //             {
-    //                 title: "Omari Gulgowski",
-    //                 avatar: "/images/content/avatar-4.png",
-    //                 type: "Personal trainer",
-    //             },
-    //         ],
-    //     },
-    // },
     {
         title: "Lifestyle",
         url: "/lifestyle",
@@ -118,16 +27,6 @@ const navLinks = [
 ];
 
 const socials = [
-    // {
-    //     title: "facebook",
-    //     size: "16",
-    //     url: "https://www.facebook.com/ui8.net/",
-    // },
-    // {
-    //     title: "twitter",
-    //     size: "18",
-    //     url: "https://twitter.com/ui8",
-    // },
     {
         title: "linkedin",
         size: "16",
@@ -137,16 +36,8 @@ const socials = [
 
 const contact = [
     {
-        title: "Montanachester",
-        content: "06787 Block Estates",
-    },
-    {
-        title: "Lake Gene",
-        content: "167 Emard River",
-    },
-    {
-        title: "North Hassiefort",
-        content: "032 Leonora Spurs",
+        title: "Innovation Factory, Hamilton",
+        content: "B21-175 Longwood Road South",
     },
 ];
 

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import cn from "classnames";
 import styles from "./Subscription.module.sass";
 import Icon from "../Icon";
-import submitForm from "../../../firebase/submitForm";
 
 const Subscription = ({ className, placeholder }) => {
     const [email, setEmail] = useState("");
@@ -11,7 +10,8 @@ const Subscription = ({ className, placeholder }) => {
     const handleSubmit = async () => {
         try {
             setLoading(true);
-            await submitForm({ name: "", email: email, message: "" });
+            const module = await import("../../../firebase/submitForm");
+            module.submitForm({ name: "", email: email, message: "" });
             setLoading(false);
             setEmail("Thank you!");
         } catch (error) {

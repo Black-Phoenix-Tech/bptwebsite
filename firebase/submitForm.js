@@ -1,6 +1,6 @@
 // submitForm.js
 import { addDoc, collection } from "firebase/firestore";
-import { auth, db } from "./firebase";
+import { db } from "./firebase";
 
 const welcomeEmail = `
 Hello,
@@ -17,7 +17,9 @@ Additionally, the Falcon app allows you to export your data, graphs, and visuali
 
 Thank you for choosing Black Phoenix. Your commitment to your health is inspiring, and we're here to support you on your journey to a healthier, happier life.
 
-Falcon app is coming soon...
+Stay tuned for an exciting journey ahead...
+
+The Falcon app is on the way...
 
 Love,
 
@@ -26,11 +28,11 @@ The Black Phoenix Team
 
 const submitForm = async (formData) => {
     try {
-        const user = auth.currentUser;
-        if (!user) {
-            console.error("User is not authenticated");
-            return;
-        }
+        // const user = auth.currentUser;
+        // if (!user) {
+        //     console.error("User is not authenticated");
+        //     return;
+        // }
         const docRef = await addDoc(collection(db, "formData"), formData);
 
         const { email, name } = formData;
@@ -66,4 +68,4 @@ const submitForm = async (formData) => {
     }
 };
 
-export default submitForm;
+export { submitForm };
