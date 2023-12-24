@@ -10,7 +10,7 @@ const items = [
     {
         title: "Tracking",
         image: "/images/content/app-tracking-feature@x.png",
-        image2x: "/images/content/app-tracking-feature.png",
+        image2x: "/images/content/app-tracking-feature@x.png",
         content:
             "Effortlessly log symptoms, mood, meds, meals, and more, either manually or through device integration. Customize tracking forms to suit your needs and expand with additional fields for a comprehensive health overview.",
     },

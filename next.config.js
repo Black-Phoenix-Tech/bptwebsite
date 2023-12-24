@@ -42,6 +42,7 @@ const nextConfig = {
         // Defaults to 50MB
         // isrMemoryCacheSize: 0, // cache size in bytes
     },
+    productionBrowserSourceMaps: false,
     /** Module federation setup for micro frontend
      * webpack: (
      config,
