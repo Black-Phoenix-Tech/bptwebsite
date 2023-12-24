@@ -15,8 +15,8 @@ const Intro = ({ scrollToRef }) => {
                             srcSet="/images/content/app-tracker.png 2x"
                             src="/images/content/app-tracker.png"
                             alt="Bag"
-                            width={570}
-                            height={570}
+                            width={410}
+                            height={410}
                         />
                     </ScrollParallax>
                 </div>

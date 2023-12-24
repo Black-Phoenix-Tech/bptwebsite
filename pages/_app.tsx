@@ -3,22 +3,14 @@ import dynamic from "next/dynamic";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import ClientOnly from "src/components/ClientOnly";
-import { useRouter } from "next/router";
 import Page from "../src/components/Page";
 import "src/styles/app.sass";
-// import { analytics } from "../firebase/firebase";
 
 const Script = dynamic(() => import("next/script"), {
     suspense: true,
 });
 
 const AppWithTheme = ({ Component, pageProps }: AppProps) => {
-    useEffect(() => {
-        try {
-            // (analytics as any)?.logEvent("visit website", { param: "all" });
-        } catch (error) {}
-    }, []);
-
     return (
         <Suspense>
             <Page>
@@ -37,7 +29,6 @@ const MyApp = ({ Component, pageProps }: AppInitialProps) => {
     return (
         <>
             <Head>
-                {/* <meta charset="utf-8" /> */}
                 <title>Black Phoenix</title>
                 <meta property="og:title" content="Black Phoenix" />
                 <meta property="og:url" content="https://blackphoenix.ca" />

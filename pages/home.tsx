@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 // import styles from "./Home.module.sass";
 import Hero from "src/screens/Home/Hero";
 import Steps from "src/screens/Home/Steps";
@@ -10,7 +10,6 @@ import Offer from "src/components/Offer";
 
 const Home = () => {
     const scrollToRef = useRef(null);
-
     return (
         <>
             <Hero scrollToRef={scrollToRef} />
