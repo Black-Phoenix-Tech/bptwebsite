@@ -35,7 +35,7 @@ const Hero = ({ scrollToRef }) => {
                 />
                 <div className={styles.gallery}>
                     <div className={styles.preview}>
-                        <Image width={2020} height={660} src="/images/content/form-1.png" alt="Ball" />
+                        <Image width={400} height={504} src="/images/content/form-1.png" alt="intro" priority />
                     </div>
                 </div>
             </div>

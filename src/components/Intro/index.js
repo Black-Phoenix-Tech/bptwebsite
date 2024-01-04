@@ -11,13 +11,7 @@ const Intro = ({ scrollToRef }) => {
             <div className={cn("container", styles.container)}>
                 <div className={styles.gallery}>
                     <ScrollParallax className={styles.preview} animateIn="fadeInUp">
-                        <Image
-                            srcSet="/images/content/app-tracker.png 2x"
-                            src="/images/content/app-tracker.png"
-                            alt="Bag"
-                            width={570}
-                            height={570}
-                        />
+                        <Image src="/images/content/app-tracker.png" alt="app tracker" width={512} height={512} />
                     </ScrollParallax>
                 </div>
                 <div className={styles.wrap}>
