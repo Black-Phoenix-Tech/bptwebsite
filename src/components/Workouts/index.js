@@ -45,7 +45,7 @@ const Workouts = () => {
                         ))}
                     </ul>
                     <div className={styles.btns}>
-                        <Link className={cn("button", styles.button)} href="/pricing">
+                        <Link className={cn("button", styles.button)} href="/features">
                             View All Features
                         </Link>
                         {/* <button className={cn("button-stroke", styles.button)}>Request a demo</button> */}

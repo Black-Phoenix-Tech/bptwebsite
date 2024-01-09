@@ -25,8 +25,8 @@ const Intro = ({ scrollToRef }) => {
                         care coordination features to empower patients in managing their health.
                         {/* 🔥🏀 */}
                     </div>
-                    <Link className={cn("button", styles.button)} href="/">
-                        Start free trial
+                    <Link className={cn("button", styles.button)} href="/contact">
+                        Contact us
                     </Link>
                 </div>
             </div>
