@@ -56,7 +56,6 @@ const Headers = () => {
                         srcDark="/images/logo-dark.svg"
                         // width={100}
                         // height={100}
-
                         alt="Fitness Pro"
                     />
                     <h1 className={styles.title}>Black Phoenix</h1>
