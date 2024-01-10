@@ -13,7 +13,7 @@ const Subscription = ({ className, placeholder }) => {
             const module = await import("../../../firebase/submitForm");
             module.submitForm({ name: "", email: email, message: "" });
             setLoading(false);
-            setEmail("Thank you!");
+            setEmail("Thanks, email recieved!");
         } catch (error) {
             console.error("Error sending email:", error);
         }

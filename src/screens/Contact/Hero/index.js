@@ -18,7 +18,7 @@ const Hero = () => {
             setLoading(false);
             setName("");
             setEmail("");
-            setMessage("Thank you!");
+            setMessage("Thank you, your message received!");
         } catch (error) {
             console.error("Error sending email:", error);
         }
